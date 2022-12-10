@@ -1,0 +1,16 @@
+title: Year 2022 Sales Summary
+sql: |
+  SELECT
+    date_trunc('month', order_date) AS month,
+    SUM(total) AS total
+  FROM
+    orders
+  WHERE
+    order_date >= '2022-01-01' AND order_date < '2023-01-01'
+  GROUP BY
+    month
+  ORDER BY
+    month
+note: |
+  This report shows the total sales for each month in 2022.
+

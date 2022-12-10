@@ -1,0 +1,7 @@
+python3 -m venv .venv
+source .venv/bin/activate
+mkdir .package
+pip download -r requirement.txt -d .package
+
+
+pip install -r requirement.txt --no-index --find-links .package/

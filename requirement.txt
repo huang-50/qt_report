@@ -1,0 +1,6 @@
+pandas
+cx-Oracle
+cryptography
+XlsxWriter
+PyYAML
+pywin32; platform_system=="Windows"
